@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Talent Discovery Blueprint — Identify Your Child's Natural Strengths (Ages 0–10)</title>
+<meta name="description" content="An 80+ page practical toolkit for parents. Discover your child's natural talents with the Observer Parent Method. Instant PDF download — read tonight." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ── Reset ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  background: #F6F1E4;
+  color: #2D332A;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; }
+
+/* ── Tokens ── */
+:root {
+  --cream:     #F6F1E4;
+  --cream2:    #EFE8D2;
+  --ink:       #2D332A;
+  --ink-soft:  #5C6354;
+  --sage:      #7A8B5F;
+  --sage-deep: #5E6E48;
+  --coral:     #E07856;
+  --sage-soft: #DDE2CC;
+  --line:      rgba(45,51,42,0.12);
+  --serif:     "Newsreader", Georgia, serif;
+  --sans:      "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* ── Utility ── */
+.container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+@media (min-width: 1024px) { .container { max-width: 960px; padding: 0 48px; } }
+
+/* ── Eyebrow tag ── */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 600; padding: 5px 12px;
+  border-radius: 999px;
+}
+.eyebrow::before {
+  content: ''; width: 6px; height: 6px; border-radius: 3px;
+  background: currentColor;
+}
+.eyebrow--default { color: var(--coral); background: rgba(45,51,42,0.04); }
+.eyebrow--sage    { color: var(--sage-deep); background: rgba(45,51,42,0.04); }
+.eyebrow--light   { color: var(--coral); background: rgba(246,241,228,0.18); }
+
+/* ── Section headings ── */
+.section-title {
+  font-family: var(--serif); font-weight: 400;
+  letter-spacing: -0.8px; line-height: 1.05;
+  margin: 14px 0 18px;
+}
+.section-title em { font-style: italic; }
+
+/* ── Nav / Top Bar ── */
+.topbar {
+  position: sticky; top: 0; z-index: 30;
+  padding: 20px 24px 14px;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: all 0.25s;
+}
+.topbar.scrolled {
+  background: rgba(246,241,228,0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.topbar__brand {
+  display: flex; align-items: center; gap: 8px;
+  text-decoration: none; color: inherit;
+}
+.topbar__brand-text {
+  font-family: var(--serif); font-size: 18px; font-weight: 500; letter-spacing: -0.3px;
+}
+.topbar__cta {
+  padding: 9px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  border: 1.5px solid var(--ink); background: transparent; color: var(--ink);
+  transition: all 0.2s;
+}
+.topbar.scrolled .topbar__cta {
+  background: var(--sage); color: #fff; border-color: var(--sage);
+}
+
+/* ── Hero ── */
+.hero { padding: 12px 24px 50px; position: relative; overflow: hidden; }
+@media (min-width: 1024px) { .hero { padding: 40px 48px 80px; } }
+.hero__blob {
+  position: absolute; top: -40px; right: -80px; opacity: 0.3; pointer-events: none;
+}
+.hero__eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px;
+  background: var(--sage-soft); border-radius: 999px; margin-bottom: 24px;
+  font-size: 12px; color: var(--sage-deep); font-weight: 600;
+}
+.hero__eyebrow::before {
+  content: ''; width: 6px; height: 6px; border-radius: 3px; background: var(--coral);
+}
+.hero h1 {
+  font-family: var(--serif); font-size: clamp(42px, 10vw, 64px);
+  line-height: 0.96; font-weight: 400; letter-spacing: -1.6px;
+  margin: 0 0 22px;
+}
+.hero h1 .accent {
+  display: inline-block; position: relative;
+}
+.hero h1 .accent-text {
+  position: relative; z-index: 2; font-style: italic; color: var(--sage-deep);
+}
+.hero h1 .accent svg {
+  position: absolute; bottom: -4px; left: -4px; right: -4px; z-index: 1;
+}
+.hero__sub {
+  font-size: 17px; line-height: 1.5; color: var(--ink-soft);
+  margin: 0 0 32px; max-width: 480px;
+}
+.hero__sub strong { color: var(--ink); }
+
+/* ── CTA Button ── */
+.cta-btn {
+  width: 100%; background: var(--ink); color: var(--cream); border: none;
+  padding: 20px 24px; border-radius: 999px; font-size: 16px; font-weight: 600;
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; transition: transform 0.15s, box-shadow 0.15s;
+}
+.cta-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(45,51,42,0.22); }
+@media (min-width: 1024px) { .cta-btn { max-width: 420px; } }
+.cta-btn__arrow {
+  width: 32px; height: 32px; border-radius: 16px; background: var(--coral);
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+  flex-shrink: 0;
+}
+.cta-sub { font-size: 12px; color: var(--ink-soft); text-align: center; margin-bottom: 18px; }
+
+/* ── Social proof counter ── */
+.social-counter {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  padding: 12px 16px; background: var(--cream2); border-radius: 999px;
+  border: 1px solid var(--line); margin-bottom: 36px;
+}
+@media (min-width: 1024px) { .social-counter { max-width: 420px; } }
+.social-counter__avatars { display: flex; }
+.social-counter__avatar {
+  width: 26px; height: 26px; border-radius: 13px;
+  border: 2px solid var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 11px; color: #fff; font-weight: 600;
+}
+.social-counter__avatar:not(:first-child) { margin-left: -8px; }
+.social-counter__text { font-size: 12.5px; line-height: 1.3; }
+.social-counter__text strong { font-weight: 700; }
+.social-counter__text span { color: var(--ink-soft); }
+
+/* ── Book mock ── */
+.book-display { position: relative; }
+.book-display__blob {
+  background: linear-gradient(160deg, var(--sage-soft), var(--cream2));
+  border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
+  aspect-ratio: 4/4.6;
+  padding: 30px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .book-display__blob { max-width: 420px; margin: 0 auto; aspect-ratio: 4/3.5; }
+}
+.book-mock {
+  width: 70%; aspect-ratio: 3/4; background: var(--cream);
+  border-radius: 8px; padding: 24px 18px;
+  box-shadow: 0 18px 40px rgba(45,51,42,0.18);
+  transform: rotate(-4deg);
+  display: flex; flex-direction: column; justify-content: space-between;
+  border: 1px solid var(--line);
+}
+.book-mock__icon {
+  width: 28px; height: 28px; border-radius: 14px; background: var(--coral);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 14px; font-weight: 700;
+}
+.book-mock__title {
+  font-family: var(--serif); font-size: 20px; line-height: 0.95;
+  letter-spacing: -0.5px; font-weight: 500;
+}
+.book-mock__title em { font-style: italic; color: var(--sage-deep); }
+.book-mock__field-guide {
+  font-size: 9px; color: var(--ink-soft); margin-top: 8px;
+  font-family: var(--serif); font-style: italic;
+}
+.book-mock__author {
+  font-size: 9px; color: var(--ink-soft); font-weight: 600;
+  letter-spacing: 0.6px; text-transform: uppercase;
+}
+.book-chip {
+  position: absolute; border-radius: 999px; padding: 8px 14px;
+  font-size: 11px; font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex; align-items: center; gap: 6px;
+}
+.book-chip--pages {
+  top: 30px; right: 22px; background: var(--cream); transform: rotate(8deg);
+}
+.book-chip--pages::before {
+  content: ''; width: 6px; height: 6px; border-radius: 3px; background: var(--coral);
+}
+.book-chip--read {
+  bottom: 50px; left: 14px; background: var(--sage); color: #fff; transform: rotate(-6deg);
+}
+
+/* ── Desktop layout for hero ── */
+@media (min-width: 1024px) {
+  .hero__inner { display: flex; gap: 60px; align-items: center; }
+  .hero__copy { flex: 1; }
+  .book-display { flex: 0 0 400px; }
+}
+
+/* ── Problem section ── */
+.problem {
+  padding: 50px 24px 56px;
+  background: var(--cream2);
+  border-radius: 40px 40px 0 0;
+}
+@media (min-width: 1024px) { .problem { padding: 80px 48px; } }
+.problem h2 { font-size: clamp(28px, 5vw, 36px); }
+.problem h2 em { color: var(--sage-deep); }
+.problem__body { font-size: 16px; line-height: 1.55; color: var(--ink-soft); margin: 0 0 14px; }
+.problem__body--strong { color: var(--ink); margin-bottom: 26px; }
+.problem__body--strong strong { font-weight: 600; }
+.problem__bullets { display: flex; flex-direction: column; gap: 10px; }
+@media (min-width: 1024px) {
+  .problem__bullets { display: grid; grid-template-columns: 1fr 1fr; }
+}
+.problem__bullet {
+  padding: 14px 18px; background: var(--cream); border-radius: 16px;
+  display: flex; gap: 12px; align-items: center;
+  border: 1px solid var(--line);
+}
+.problem__bullet-icon {
+  width: 26px; height: 26px; border-radius: 13px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.problem__bullet:nth-child(odd) .problem__bullet-icon {
+  background: var(--sage-soft); color: var(--sage-deep);
+}
+.problem__bullet:nth-child(even) .problem__bullet-icon {
+  background: rgba(224,120,86,0.19); color: var(--coral);
+}
+.problem__bullet span { font-size: 14.5px; line-height: 1.35; }
+
+/* ── Solution section ── */
+.solution { padding: 60px 24px; }
+@media (min-width: 1024px) { .solution { padding: 80px 48px; } }
+.solution h2 { font-size: clamp(28px, 5vw, 36px); }
+.solution h2 em { color: var(--coral); }
+.solution__body { font-size: 16px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 32px; }
+.solution__body strong { color: var(--ink); }
+.solution__grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+@media (min-width: 1024px) { .solution__grid { grid-template-columns: repeat(4, 1fr); } }
+.solution__card {
+  padding: 18px; background: var(--cream2); border-radius: 20px;
+  aspect-ratio: 1/1.15;
+  display: flex; flex-direction: column; justify-content: space-between;
+  border: 1px solid var(--line); position: relative; overflow: hidden;
+}
+@media (min-width: 1024px) { .solution__card { aspect-ratio: auto; min-height: 220px; } }
+.solution__card-num {
+  width: 36px; height: 36px; border-radius: 18px;
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+}
+.solution__card:nth-child(odd) .solution__card-num { background: var(--sage); }
+.solution__card:nth-child(even) .solution__card-num { background: var(--coral); }
+.solution__card-title {
+  font-family: var(--serif); font-size: 17px; font-weight: 500;
+  letter-spacing: -0.3px; line-height: 1.15; margin-bottom: 6px;
+}
+.solution__card-desc { font-size: 12.5px; color: var(--ink-soft); line-height: 1.4; }
+
+/* ── Inside section ── */
+.inside { padding: 50px 24px; background: var(--sage); color: var(--cream); }
+@media (min-width: 1024px) { .inside { padding: 80px 48px; } }
+.inside h2 {
+  font-family: var(--serif); font-size: clamp(28px, 5vw, 36px); line-height: 1.05;
+  font-weight: 400; letter-spacing: -0.7px; margin: 14px 0 12px; color: var(--cream);
+}
+.inside h2 em { color: rgba(246,241,228,0.7); }
+.inside__sub { font-size: 14.5px; color: rgba(246,241,228,0.78); margin: 0 0 28px; }
+.inside__parts { display: flex; flex-direction: column; gap: 12px; }
+@media (min-width: 1024px) {
+  .inside__parts { display: grid; grid-template-columns: 1fr 1fr; }
+}
+.inside__part {
+  background: rgba(246,241,228,0.08); border-radius: 20px;
+  padding: 18px; border: 1px solid rgba(246,241,228,0.12);
+}
+.inside__part-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.inside__part-num {
+  width: 30px; height: 30px; border-radius: 15px; background: var(--coral);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 12px;
+}
+.inside__part-title {
+  font-family: var(--serif); font-size: 20px; font-weight: 500;
+  letter-spacing: -0.4px; color: var(--cream);
+}
+.inside__part-items { display: flex; flex-direction: column; gap: 6px; }
+.inside__part-item {
+  padding: 8px 12px; background: rgba(246,241,228,0.05); border-radius: 10px;
+  font-size: 13.5px; color: rgba(246,241,228,0.92);
+  display: flex; gap: 10px; align-items: center;
+}
+.inside__part-item::before { content: '·'; color: var(--coral); font-weight: 700; }
+
+/* ── Benefits section ── */
+.benefits { padding: 60px 24px; }
+@media (min-width: 1024px) { .benefits { padding: 80px 48px; } }
+.benefits h2 { font-size: clamp(26px, 5vw, 34px); }
+.benefits h2 em { color: var(--sage-deep); }
+.benefits__list { display: flex; flex-direction: column; gap: 12px; }
+@media (min-width: 1024px) {
+  .benefits__list { display: grid; grid-template-columns: 1fr 1fr; }
+}
+.benefits__item {
+  padding: 20px; border-radius: 22px; background: var(--cream2);
+  display: flex; gap: 16px; align-items: flex-start;
+  border: 1px solid var(--line);
+}
+.benefits__item-num {
+  width: 44px; height: 44px; border-radius: 22px;
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 18px; font-weight: 600; flex-shrink: 0;
+}
+.benefits__item:nth-child(1) .benefits__item-num { background: var(--sage); }
+.benefits__item:nth-child(2) .benefits__item-num { background: var(--coral); }
+.benefits__item:nth-child(3) .benefits__item-num { background: var(--sage-deep); }
+.benefits__item:nth-child(4) .benefits__item-num { background: var(--coral); }
+.benefits__item-title {
+  font-family: var(--serif); font-size: 18px; font-weight: 500;
+  letter-spacing: -0.3px; margin-bottom: 4px;
+}
+.benefits__item-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
+
+/* ── Testimonials ── */
+.testimonials {
+  padding: 40px 0 60px; background: var(--cream2); border-radius: 40px 40px 0 0;
+}
+@media (min-width: 1024px) { .testimonials { padding: 80px 0; } }
+.testimonials h2 { font-size: clamp(24px, 5vw, 32px); }
+.testimonials h2 em { color: var(--coral); }
+.testimonials__track {
+  display: flex; gap: 14px; padding: 0 24px;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.testimonials__track::-webkit-scrollbar { display: none; }
+@media (min-width: 1024px) {
+  .testimonials__track {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    overflow: visible; padding: 0 48px;
+  }
+}
+.testimonial-card {
+  min-width: 280px; scroll-snap-align: start;
+  background: var(--cream); border-radius: 24px; padding: 22px;
+  border: 1px solid var(--line);
+  display: flex; flex-direction: column; min-height: 230px;
+}
+@media (min-width: 1024px) { .testimonial-card { min-width: 0; } }
+.testimonial-card__top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.testimonial-card__avatar {
+  width: 44px; height: 44px; border-radius: 22px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 16px; font-family: var(--serif);
+}
+.testimonial-card:nth-child(odd) .testimonial-card__avatar {
+  background: var(--sage-soft); color: var(--sage-deep);
+}
+.testimonial-card:nth-child(even) .testimonial-card__avatar {
+  background: rgba(224,120,86,0.19); color: var(--coral);
+}
+.testimonial-card__stars { display: flex; gap: 2px; color: var(--coral); font-size: 13px; }
+.testimonial-card__quote {
+  font-family: var(--serif); font-size: 15.5px; line-height: 1.4;
+  margin: 0 0 16px; flex: 1;
+}
+.testimonial-card__footer { border-top: 1px solid var(--line); padding-top: 12px; }
+.testimonial-card__name { font-size: 13px; font-weight: 600; }
+.testimonial-card__child { font-size: 11.5px; color: var(--ink-soft); margin-top: 2px; }
+
+/* ── Author ── */
+.author-section { padding: 60px 24px; }
+@media (min-width: 1024px) { .author-section { padding: 80px 48px; } }
+.author-card {
+  margin-top: 22px;
+  background: linear-gradient(160deg, var(--sage-soft), var(--cream2));
+  border-radius: 28px; padding: 24px;
+}
+@media (min-width: 1024px) { .author-card { max-width: 640px; padding: 40px; } }
+.author-card__top { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.author-card__avatar {
+  width: 88px; height: 88px; border-radius: 44px; flex-shrink: 0;
+  background: var(--cream); border: 2px solid var(--cream);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 28px; font-weight: 500; color: var(--sage-deep);
+}
+.author-card__name {
+  font-family: var(--serif); font-size: 24px; font-weight: 500; letter-spacing: -0.5px;
+}
+.author-card__role {
+  font-size: 12.5px; color: var(--ink-soft); font-style: italic;
+  font-family: var(--serif); margin-top: 2px;
+}
+.author-card__bio { font-size: 14.5px; line-height: 1.55; }
+.author-card__bio strong { font-weight: 600; }
+.author-card__sig {
+  font-family: var(--serif); font-style: italic; font-size: 26px;
+  color: var(--coral); margin-top: 18px; font-weight: 400;
+}
+
+/* ── FAQ ── */
+.faq {
+  padding: 40px 24px 60px; background: var(--cream2); border-radius: 40px 40px 0 0;
+}
+@media (min-width: 1024px) { .faq { padding: 80px 48px; } }
+.faq h2 { font-size: clamp(24px, 5vw, 32px); }
+.faq__list { display: flex; flex-direction: column; gap: 10px; max-width: 640px; }
+.faq__item {
+  background: var(--cream); border-radius: 18px; padding: 16px 18px;
+  border: 1px solid var(--line); cursor: pointer;
+  transition: border-color 0.15s;
+}
+.faq__item.open { border: 1.5px solid var(--sage); }
+.faq__item-header {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
+}
+.faq__item-question {
+  font-family: var(--serif); font-size: 16px; font-weight: 500;
+  letter-spacing: -0.3px; line-height: 1.25;
+}
+.faq__item-toggle {
+  width: 26px; height: 26px; border-radius: 13px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; line-height: 1; transition: all 0.2s;
+  border: none; cursor: pointer; font-family: inherit;
+}
+.faq__item:not(.open) .faq__item-toggle {
+  background: var(--sage-soft); color: var(--sage-deep);
+}
+.faq__item.open .faq__item-toggle {
+  background: var(--sage); color: #fff;
+}
+.faq__item-answer {
+  font-size: 13.5px; line-height: 1.5; color: var(--ink-soft);
+  margin-top: 10px; display: none;
+}
+.faq__item.open .faq__item-answer { display: block; }
+
+/* ── Final CTA ── */
+.final-cta { padding: 60px 24px 80px; position: relative; overflow: hidden; }
+@media (min-width: 1024px) { .final-cta { padding: 100px 48px; } }
+.final-cta__blob {
+  position: absolute; bottom: -60px; left: -60px; opacity: 0.4; pointer-events: none;
+}
+.final-cta__inner { position: relative; max-width: 540px; }
+.final-cta h2 {
+  font-family: var(--serif); font-size: clamp(30px, 7vw, 42px);
+  line-height: 1; font-weight: 400; letter-spacing: -1px; margin: 20px 0 14px;
+}
+.final-cta__accent {
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(30px, 7vw, 42px); line-height: 1;
+  font-weight: 400; letter-spacing: -1px; color: var(--coral); margin: 0 0 26px;
+}
+.final-cta__body { font-size: 16px; line-height: 1.5; color: var(--ink-soft); margin: 0 0 30px; }
+.final-cta .cta-btn { box-shadow: 0 8px 22px rgba(45,51,42,0.18); }
+
+/* ── Footer ── */
+.site-footer { padding: 32px 24px 60px; background: var(--ink); color: rgba(246,241,228,0.7); }
+@media (min-width: 1024px) { .site-footer { padding: 48px 48px 60px; } }
+.site-footer__brand { display: flex; align-items: center; gap: 8px; margin-bottom: 22px; }
+.site-footer__brand-text {
+  font-family: var(--serif); font-size: 18px; font-weight: 500;
+  color: var(--cream); letter-spacing: -0.3px;
+}
+.site-footer__copy { font-size: 12.5px; line-height: 1.6; }
+
+/* ── Sales Toast ── */
+.sales-toast {
+  position: fixed; top: 20px; left: 14px; right: 14px; z-index: 50;
+  max-width: 420px;
+  opacity: 0; transform: translateY(-12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+@media (min-width: 768px) { .sales-toast { left: auto; right: 24px; } }
+.sales-toast.visible {
+  opacity: 1; transform: translateY(0); pointer-events: auto;
+}
+.sales-toast__inner {
+  background: var(--cream); border-radius: 16px; padding: 12px 14px;
+  display: flex; align-items: center; gap: 12px;
+  box-shadow: 0 14px 30px rgba(45,51,42,0.18), 0 2px 6px rgba(45,51,42,0.08);
+  border: 1px solid var(--line);
+}
+.sales-toast__avatar {
+  width: 38px; height: 38px; border-radius: 19px; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--sage-soft), var(--cream2));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 15px; color: var(--sage-deep);
+  font-weight: 600; border: 1px solid var(--line);
+}
+.sales-toast__text { flex: 1; min-width: 0; }
+.sales-toast__name { font-size: 12.5px; line-height: 1.3; }
+.sales-toast__name strong { font-weight: 700; }
+.sales-toast__name span { color: var(--ink-soft); }
+.sales-toast__meta {
+  font-size: 11px; color: var(--ink-soft); margin-top: 2px;
+  display: flex; align-items: center; gap: 6px;
+}
+.sales-toast__meta::before {
+  content: ''; width: 5px; height: 5px; border-radius: 3px; background: var(--sage);
+}
+.sales-toast__close {
+  width: 22px; height: 22px; border-radius: 11px; border: none;
+  background: transparent; color: var(--ink-soft); font-size: 16px;
+  cursor: pointer; flex-shrink: 0; line-height: 1; padding: 0;
+}
+.sales-toast__close:hover { color: var(--ink); }
+
+/* ── Sticky CTA ── */
+.sticky-cta {
+  position: fixed; bottom: 16px; left: 16px; right: 16px; z-index: 40;
+  max-width: 420px; margin: 0 auto;
+  background: var(--cream); border-radius: 999px; padding: 8px 8px 8px 18px;
+  display: flex; align-items: center; justify-content: space-between;
+  box-shadow: 0 12px 28px rgba(45,51,42,0.18);
+  border: 1px solid var(--line);
+  transform: translateY(100px); opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.sticky-cta.visible { transform: translateY(0); opacity: 1; }
+.sticky-cta__label { font-size: 13px; font-weight: 600; }
+.sticky-cta__sub { font-size: 11px; color: var(--ink-soft); margin-top: 1px; }
+.sticky-cta__btn {
+  background: var(--sage); color: #fff; border: none;
+  padding: 12px 18px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  transition: background 0.15s;
+}
+.sticky-cta__btn:hover { background: var(--sage-deep); }
+</style>
+</head>
+<body>
+
+<!-- ── Top Bar ── -->
+<nav class="topbar" id="topbar">
+  <a href="#" class="topbar__brand">
+    <svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="#7A8B5F"/><circle cx="13" cy="13" r="5" fill="#E07856"/></svg>
+    <span class="topbar__brand-text">Sorrell&amp;Co.</span>
+  </a>
+  <button class="topbar__cta" onclick="document.querySelector('.hero .cta-btn').scrollIntoView({behavior:'smooth',block:'center'})">Get it &rarr;</button>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <svg class="hero__blob" width="280" height="280" viewBox="0 0 280 280"><path d="M140 20C200 20 250 70 260 130C270 200 220 250 150 260C80 270 30 220 20 150C10 80 80 20 140 20Z" fill="#DDE2CC"/></svg>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <div class="hero__eyebrow">A practical toolkit for present parents</div>
+
+      <h1>
+        Am I missing<br>
+        something in <span class="accent"><span class="accent-text">my child</span><svg width="100%" height="14" viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 8 Q 50 2, 100 7 T 198 6" stroke="#E07856" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span>?
+      </h1>
+
+      <p class="hero__sub">
+        If that thought has kept you up at night — you're not alone, and you're not behind. The Blueprint is a calm, practical guide that helps you actually see your child's natural strengths. <strong>Things you can try tonight.</strong>
+      </p>
+
+      <button class="cta-btn">
+        <span>Get the Blueprint — $29</span>
+        <span class="cta-btn__arrow">&rarr;</span>
+      </button>
+      <div class="cta-sub">&#10047; Instant download · Read tonight &#10047;</div>
+
+      <div class="social-counter">
+        <div class="social-counter__avatars">
+          <div class="social-counter__avatar" style="background:#7A8B5F">H</div>
+          <div class="social-counter__avatar" style="background:#E07856">P</div>
+          <div class="social-counter__avatar" style="background:#5E6E48">D</div>
+          <div class="social-counter__avatar" style="background:#C8A26F">S</div>
+        </div>
+        <div class="social-counter__text">
+          <strong>3,847 parents</strong> <span>have read it this month</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Mock -->
+    <div class="book-display">
+      <div class="book-display__blob">
+        <div class="book-mock">
+          <div class="book-mock__icon">&#10047;</div>
+          <div>
+            <div class="book-mock__title">The Talent<br>Discovery<br><em>Blueprint</em></div>
+            <div class="book-mock__field-guide">A field guide for parents.</div>
+          </div>
+          <div class="book-mock__author">Amelia Sorrell</div>
+        </div>
+        <div class="book-chip book-chip--pages">80+ pages</div>
+        <div class="book-chip book-chip--read">Read tonight</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Problem ── -->
+<section class="problem">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--default">The Problem</div>
+    <h2 class="section-title">You're not doing too little. You're just looking with <em>tired eyes.</em></h2>
+    <p class="problem__body">
+      It's 11pm. Another scroll past another perfect kid doing another perfect thing. You wonder if you should sign her up for something. <em>Anything.</em>
+    </p>
+    <p class="problem__body problem__body--strong">
+      Here's the quiet truth most parenting content won't tell you: <strong>your child is already showing you who they are.</strong> Every day. You don't need a course. You need a way to notice.
+    </p>
+    <div class="problem__bullets">
+      <div class="problem__bullet">
+        <div class="problem__bullet-icon">&#9825;</div>
+        <span>Comparing your child to other kids on the internet</span>
+      </div>
+      <div class="problem__bullet">
+        <div class="problem__bullet-icon">&#9825;</div>
+        <span>Drowning in advice that all contradicts itself</span>
+      </div>
+      <div class="problem__bullet">
+        <div class="problem__bullet-icon">&#9825;</div>
+        <span>Wondering if you're missing a window you can't get back</span>
+      </div>
+      <div class="problem__bullet">
+        <div class="problem__bullet-icon">&#9825;</div>
+        <span>Feeling guilty that you don't have time for "enrichment"</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Solution ── -->
+<section class="solution">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--sage">The Blueprint</div>
+    <h2 class="section-title">A toolkit for parents who want to <em>see clearly</em> — not do more.</h2>
+    <p class="solution__body">
+      The <strong>Observer Parent Method</strong> is a four-step rhythm built for the kitchen table. Watch, write, translate, respond.
+    </p>
+    <div class="solution__grid">
+      <div class="solution__card">
+        <div class="solution__card-num">01</div>
+        <div>
+          <div class="solution__card-title">Watch with intention</div>
+          <div class="solution__card-desc">A 5-minute observation framework you'll actually use.</div>
+        </div>
+      </div>
+      <div class="solution__card">
+        <div class="solution__card-num">02</div>
+        <div>
+          <div class="solution__card-title">Translate what you see</div>
+          <div class="solution__card-desc">8 learning styles in plain, parent-friendly language.</div>
+        </div>
+      </div>
+      <div class="solution__card">
+        <div class="solution__card-num">03</div>
+        <div>
+          <div class="solution__card-title">Respond on purpose</div>
+          <div class="solution__card-desc">Scripts and small moves that nudge what's already there.</div>
+        </div>
+      </div>
+      <div class="solution__card">
+        <div class="solution__card-num">04</div>
+        <div>
+          <div class="solution__card-title">Practice, gently</div>
+          <div class="solution__card-desc">30 days of tiny prompts. No expensive classes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── What's Inside ── -->
+<section class="inside">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--light">What's inside</div>
+    <h2>Four parts. <em>One quiet system.</em></h2>
+    <p class="inside__sub">Designed for the 15-minute window after dinner.</p>
+    <div class="inside__parts">
+      <div class="inside__part">
+        <div class="inside__part-header">
+          <div class="inside__part-num">01</div>
+          <span class="inside__part-title">The Framework</span>
+        </div>
+        <div class="inside__part-items">
+          <div class="inside__part-item">The Observer Parent Method</div>
+          <div class="inside__part-item">5 Play Patterns decoded</div>
+          <div class="inside__part-item">What your child's play is telling you</div>
+          <div class="inside__part-item">The 8 Learning Styles, in plain language</div>
+        </div>
+      </div>
+      <div class="inside__part">
+        <div class="inside__part-header">
+          <div class="inside__part-num">02</div>
+          <span class="inside__part-title">Age-Specific Guides</span>
+        </div>
+        <div class="inside__part-items">
+          <div class="inside__part-item">Ages 0–3: noticing without naming</div>
+          <div class="inside__part-item">Ages 4–6: the curiosity years</div>
+          <div class="inside__part-item">Ages 7–10: strengths come into focus</div>
+          <div class="inside__part-item">Developmental milestones to watch for</div>
+        </div>
+      </div>
+      <div class="inside__part">
+        <div class="inside__part-header">
+          <div class="inside__part-num">03</div>
+          <span class="inside__part-title">Nurturing Tools</span>
+        </div>
+        <div class="inside__part-items">
+          <div class="inside__part-item">Growth-mindset scripts you can use today</div>
+          <div class="inside__part-item">Talent Stations: low-cost activity zones</div>
+          <div class="inside__part-item">Things you already own, used differently</div>
+          <div class="inside__part-item">Phrases that open instead of close</div>
+        </div>
+      </div>
+      <div class="inside__part">
+        <div class="inside__part-header">
+          <div class="inside__part-num">04</div>
+          <span class="inside__part-title">30-Day Action Plan</span>
+        </div>
+        <div class="inside__part-items">
+          <div class="inside__part-item">A daily prompt for one full month</div>
+          <div class="inside__part-item">Budget-friendly activity lists by style</div>
+          <div class="inside__part-item">Printable worksheets and trackers</div>
+          <div class="inside__part-item">A week-by-week observation log</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Benefits ── -->
+<section class="benefits">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--default">Why it works</div>
+    <h2 class="section-title">Built for the life <em>you already live.</em></h2>
+    <div class="benefits__list">
+      <div class="benefits__item">
+        <div class="benefits__item-num">01</div>
+        <div>
+          <div class="benefits__item-title">Stop guessing. Start seeing.</div>
+          <div class="benefits__item-desc">Trade the late-night spirals for a simple way to notice what's actually there.</div>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__item-num">02</div>
+        <div>
+          <div class="benefits__item-title">Works with your real schedule.</div>
+          <div class="benefits__item-desc">Designed for kitchen tables and car rides. Not weekend retreats you'll never take.</div>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__item-num">03</div>
+        <div>
+          <div class="benefits__item-title">No expensive classes required.</div>
+          <div class="benefits__item-desc">Every tool uses things you already own. No subscriptions, no shopping list.</div>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__item-num">04</div>
+        <div>
+          <div class="benefits__item-title">Made for tired parents.</div>
+          <div class="benefits__item-desc">Short chapters. Big margins. The kind of book you can read in the bath.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ── -->
+<section class="testimonials">
+  <div style="padding: 0 24px;">
+    <div class="eyebrow eyebrow--sage">From parents</div>
+    <h2 class="section-title">Quiet wins from real <em>kitchen tables.</em></h2>
+  </div>
+  <div class="testimonials__track">
+    <div class="testimonial-card">
+      <div class="testimonial-card__top">
+        <div class="testimonial-card__avatar">H</div>
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-card__quote">"I read it in two evenings and started the next morning. Within a week I noticed my daughter wasn't 'distracted' — she was sorting. I'd been calling it the wrong thing for years."</div>
+      <div class="testimonial-card__footer">
+        <div class="testimonial-card__name">Hannah M.</div>
+        <div class="testimonial-card__child">Mom of Etta, age 5</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__top">
+        <div class="testimonial-card__avatar">P</div>
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-card__quote">"I'm not a crafty Pinterest mom. I needed something that fit between work calls. The 30-day plan is the first parenting thing I've actually finished."</div>
+      <div class="testimonial-card__footer">
+        <div class="testimonial-card__name">Priya R.</div>
+        <div class="testimonial-card__child">Mom of Arjun, age 7</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__top">
+        <div class="testimonial-card__avatar">D</div>
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-card__quote">"It gave me language for what I'd been seeing. My son builds quietly for hours. I used to interrupt him to 'engage.' Now I sit nearby and watch."</div>
+      <div class="testimonial-card__footer">
+        <div class="testimonial-card__name">Daniel K.</div>
+        <div class="testimonial-card__child">Dad of Theo, age 4</div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-card__top">
+        <div class="testimonial-card__avatar">S</div>
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      </div>
+      <div class="testimonial-card__quote">"Honestly, the best $29 I've spent on parenting. Less guilt, more noticing. I feel like I know him a little better every week."</div>
+      <div class="testimonial-card__footer">
+        <div class="testimonial-card__name">Sara L.</div>
+        <div class="testimonial-card__child">Mom of Jude, age 8</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Author ── -->
+<section class="author-section">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--sage">About the author</div>
+    <div class="author-card">
+      <div class="author-card__top">
+        <div class="author-card__avatar">A</div>
+        <div>
+          <div class="author-card__name">Amelia Sorrell</div>
+          <div class="author-card__role">Educator · mother of three<br>observer-in-chief</div>
+        </div>
+      </div>
+      <p class="author-card__bio">
+        Amelia spent twelve years as an early-childhood educator before writing the Blueprint at her own kitchen table. <strong>She's interested in helping you see the kid you already have.</strong> Clearly. With less worry, and more wonder.
+      </p>
+      <div class="author-card__sig">— Amelia</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+  <div class="container" style="padding:0">
+    <div class="eyebrow eyebrow--default">Questions parents ask</div>
+    <h2 class="section-title">The honest answers.</h2>
+    <div class="faq__list">
+      <div class="faq__item open" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">What ages is this for?</div>
+          <button class="faq__item-toggle">&minus;</button>
+        </div>
+        <div class="faq__item-answer">Ages 0–10. The Blueprint splits into three age-specific sections (0–3, 4–6, 7–10), so you can jump straight to where your child is. If you have more than one kid in the range, you'll use all three.</div>
+      </div>
+      <div class="faq__item" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">Is this a parenting course?</div>
+          <button class="faq__item-toggle">+</button>
+        </div>
+        <div class="faq__item-answer">No. There are no videos, no modules, no log-ins. It's an 80+ page PDF you download once and keep forever. Read it on your phone, print the worksheets, mark it up. It's yours.</div>
+      </div>
+      <div class="faq__item" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">What if my child is just… normal?</div>
+          <button class="faq__item-toggle">+</button>
+        </div>
+        <div class="faq__item-answer">Every child has a way of being curious that's specifically theirs. "Normal" isn't the opposite of interesting — it's the starting point. The Blueprint helps you see the texture inside the everyday.</div>
+      </div>
+      <div class="faq__item" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">I work full-time. Will I have time for this?</div>
+          <button class="faq__item-toggle">+</button>
+        </div>
+        <div class="faq__item-answer">Yes. The 30-day plan is built around 5–15 minute prompts. Most of the framework is about noticing what's already happening, not adding new activities to your week.</div>
+      </div>
+      <div class="faq__item" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">Do I need to buy supplies?</div>
+          <button class="faq__item-toggle">+</button>
+        </div>
+        <div class="faq__item-answer">Almost never. The Talent Stations use things you already own — a kitchen drawer, a stack of paper, a flashlight. There's a budget-friendly list for the few times you might want to add something.</div>
+      </div>
+      <div class="faq__item" onclick="toggleFaq(this)">
+        <div class="faq__item-header">
+          <div class="faq__item-question">Can I get a refund?</div>
+          <button class="faq__item-toggle">+</button>
+        </div>
+        <div class="faq__item-answer">Yes. If the Blueprint isn't right for your family, email within 30 days and we'll send your $29 back. No questions, no forms.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Final CTA ── -->
+<section class="final-cta">
+  <svg class="final-cta__blob" width="240" height="240" viewBox="0 0 240 240"><path d="M120 20C180 20 220 60 220 120C220 180 180 220 120 220C60 220 20 180 20 120C20 60 60 20 120 20Z" fill="#DDE2CC"/></svg>
+  <div class="final-cta__inner">
+    <div class="eyebrow eyebrow--default">One more thing —</div>
+    <h2>Your child doesn't need<br>a perfect parent.</h2>
+    <div class="final-cta__accent">They need a present one.</div>
+    <p class="final-cta__body">Tonight, you can start seeing your child a little more clearly than you did this morning. That's the whole promise. Everything else follows.</p>
+    <button class="cta-btn">
+      <span>Download the Blueprint — $29</span>
+      <span class="cta-btn__arrow">&rarr;</span>
+    </button>
+    <div class="cta-sub">&#10047; Instant PDF · 30-day refund · Read tonight &#10047;</div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="site-footer">
+  <div class="site-footer__brand">
+    <svg width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="#7A8B5F"/><circle cx="13" cy="13" r="5" fill="#E07856"/></svg>
+    <span class="site-footer__brand-text">Sorrell&amp;Co.</span>
+  </div>
+  <div class="site-footer__copy">
+    &copy; 2026 Sorrell &amp; Co.<br>
+    Made with care for tired parents.
+  </div>
+</footer>
+
+<!-- ── Sales Toast ── -->
+<div class="sales-toast" id="salesToast">
+  <div class="sales-toast__inner">
+    <div class="sales-toast__avatar" id="toastAvatar"></div>
+    <div class="sales-toast__text">
+      <div class="sales-toast__name"><strong id="toastName"></strong> <span id="toastAction">just got the Blueprint</span></div>
+      <div class="sales-toast__meta"><span id="toastMeta"></span></div>
+    </div>
+    <button class="sales-toast__close" id="toastClose">&times;</button>
+  </div>
+</div>
+
+<!-- ── Sticky CTA ── -->
+<div class="sticky-cta" id="stickyCta">
+  <div>
+    <div class="sticky-cta__label">The Blueprint · $29</div>
+    <div class="sticky-cta__sub">Read tonight &#10047;</div>
+  </div>
+  <button class="sticky-cta__btn">Get it &rarr;</button>
+</div>
+
+<script>
+// ── FAQ accordion ──
+function toggleFaq(el) {
+  const wasOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq__item').forEach(item => {
+    item.classList.remove('open');
+    item.querySelector('.faq__item-toggle').textContent = '+';
+  });
+  if (!wasOpen) {
+    el.classList.add('open');
+    el.querySelector('.faq__item-toggle').textContent = '\u2212';
+  }
+}
+
+// ── Sticky nav + CTA on scroll ──
+(function() {
+  const topbar = document.getElementById('topbar');
+  const stickyCta = document.getElementById('stickyCta');
+  let ticking = false;
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        const y = window.scrollY;
+        topbar.classList.toggle('scrolled', y > 320);
+        stickyCta.classList.toggle('visible', y > 600);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+
+// ── Sales toast rotation ──
+(function() {
+  const sales = [
+    { name: "Hannah from Brooklyn, NY", child: "mom of a 5-year-old", ago: "2 minutes ago" },
+    { name: "Priya from Austin, TX", child: "mom of a 7-year-old", ago: "8 minutes ago" },
+    { name: "Daniel from Portland, OR", child: "dad of a 4-year-old", ago: "14 minutes ago" },
+    { name: "Sara from Toronto, ON", child: "mom of an 8-year-old", ago: "21 minutes ago" },
+    { name: "Maya from Denver, CO", child: "mom of twins, age 3", ago: "27 minutes ago" },
+    { name: "Jordan from Atlanta, GA", child: "dad of a 6-year-old", ago: "34 minutes ago" },
+    { name: "Lila from London, UK", child: "mom of a 9-year-old", ago: "42 minutes ago" },
+    { name: "Aisha from Vancouver, BC", child: "mom of a 2-year-old", ago: "51 minutes ago" },
+  ];
+
+  const toast = document.getElementById('salesToast');
+  const avatar = document.getElementById('toastAvatar');
+  const nameEl = document.getElementById('toastName');
+  const metaEl = document.getElementById('toastMeta');
+  const closeBtn = document.getElementById('toastClose');
+  let idx = 0;
+  let dismissed = false;
+
+  function show() {
+    const s = sales[idx];
+    avatar.textContent = s.name[0];
+    nameEl.textContent = s.name;
+    metaEl.textContent = s.child + ' \u00b7 ' + s.ago;
+    toast.classList.add('visible');
+  }
+
+  function hide() {
+    toast.classList.remove('visible');
+  }
+
+  closeBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    dismissed = true;
+    hide();
+  });
+
+  // First appearance after 1.8s
+  setTimeout(function() {
+    if (!dismissed) show();
+  }, 1800);
+
+  // Cycle every 7s
+  setInterval(function() {
+    if (dismissed) return;
+    hide();
+    setTimeout(function() {
+      idx = (idx + 1) % sales.length;
+      if (!dismissed) show();
+    }, 1800);
+  }, 7000);
+})();
+</script>
+
+</body>
+</html>
